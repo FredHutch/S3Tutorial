@@ -2,11 +2,12 @@
 
 <script>
 $(function() {
-  $("h1").first().hide();
+  $("h1").first().html("Using S3 with Cyberduck at Fred Hutch");
+  //$(".page-header").hide();
+  $("a").first().hide();
 });
 </script>
 
-# Using S3 with Cyberduck at Fred Hutch
 
 ## Step 1: Obtain your AWS Credentials
 
@@ -59,11 +60,11 @@ If all goes well, after a short installation, you should see "Installation Succe
 
 * Click the "Open Connection" Button
 
-![OpenConnection](OpenConnection.jpg)
+![OpenConnection](assets/images/OpenConnection.jpg)
 
 * In the dropdown at the top, choose `Amazon S3`.
 
-![AmazonS3](AmazonS3.jpg)
+![AmazonS3](assets/images/AmazonS3.jpg)
 
 * Copy your Access Key from the web page you opened in Step 1.
 * Paste it into the `Access Key ID` box in the Cyberduck "Open Connection" dialog box.
@@ -73,7 +74,9 @@ If all goes well, after a short installation, you should see "Installation Succe
 
 If you see a dialog warning that Cyberduck is about to list more than 100 items, check the `Always` box and click `Continue`.
 
-<img border=0 width="383" height="262" src="ListingDirectory.jpg"></image>
+
+
+<img width="383" height="262" src="assets/images/ListingDirectory.jpg">
 
 You should now see a long listing of all the S3 Buckets that exist at Fred Hutch.
 You will typically only work with one or two of these.
@@ -88,14 +91,31 @@ Find that bucket in the Cyberduck listing and double-click on it.
 
 You will see a listing of files in the bucket.
 
-<img border="0" width="594" height="275" src="FileDisplay.jpg"></image>
+<img border="0" width="594" height="275" src="assets/images/FileDisplay.jpg">
 
 You can now interact with these files, You can delete them, or rename them. Copy files to or from the bucket by dragging
 files from or to Explorer (Windows) or Finder (Mac).
 
 ## Copying files into your bucket
 
+Drag files from Explorer (Windows) or Finder (Mac) to Cyberduck.
+
+This image shows a user dragging a file (`hello.txt`) from the Finder
+window at right to the Cyberduck window on the left. When the mouse button
+is released, the file will be copied.
+
+<img border="0" src="assets/images/DragToCyberduck.jpeg">
+
 ## Copying files from your bucket to your computer
+
+Drag files from Cyberduck to Explorer (Windows) or Finder (Mac).
+
+<img border="0" src="assets/images/DragToFinder.jpeg">
+
+This image shows a user dragging the file `test.txt` from Cyberduck (at left)
+to the `adir` directory in Finder (at right). When the mouse button is released,
+the file will be copied.
+
 
 
 
