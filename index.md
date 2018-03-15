@@ -1,4 +1,4 @@
-# Using S3 with Cyberduct at Fred Hutch
+# Using S3 with Cyberduck at Fred Hutch
 
 ## Step 1: Obtain your AWS Credentials
 
