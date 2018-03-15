@@ -110,11 +110,13 @@ is released, the file will be copied.
 
 Drag files from Cyberduck to Explorer (Windows) or Finder (Mac).
 
-<img border="0" src="assets/images/DragToFinder.jpeg">
-
 This image shows a user dragging the file `test.txt` from Cyberduck (at left)
 to the `adir` directory in Finder (at right). When the mouse button is released,
 the file will be copied.
+
+
+<img border="0" src="assets/images/DragToFinder.jpeg">
+
 
 
 
